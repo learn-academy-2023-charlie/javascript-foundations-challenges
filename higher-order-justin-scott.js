@@ -34,8 +34,34 @@ const oddArray = (array) => {
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use the typeof operator.
 // const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 // // output: "nicework"
+//Pseudocode
+// create a function that takes in an array
+// create a array
+// use typeOf built in method 
+// expected output "n," "i", "c", "e", "w", "o", "r", "k"
+
+const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"];
+
+const lettersArray = (array) => {
+  return array.filter((value) => typeof value === "string").join("");
+}
+
+const lettersOnly = lettersArray(comboArr);
+console.log(lettersOnly);
+
+//output is nicework
 
 
-// Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
-// const filterArrayValues = [58, "", "abcd", true, null, false, 0]
-// // output: [58, "abcd", true]
+const filterArrayValues = [58, "", "abcd", true, null, false, 0];
+
+const filterTruthyValues = (array) => {
+  return array.filter((value) => value); // returns truthy values only
+}
+
+
+console.log(filteredArray); // [58, "abcd", true]
+
+
+//pseudocode
+// create a function that takes in an array
+// use the .filter built in method 
