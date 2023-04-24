@@ -82,9 +82,9 @@ const comboArr = [
 const onlyLetters = (array) => {
     let arrayLetters = []
     for (let i = 0; i < array.length; i++) {
-        if (typeOf (array[i]) === "string") {
+        if (`typeOf ${array[i]} === "String"`) {
             arrayLetters.push(array[i])
-        }
+    } 
     }
     return arrayLetters;
 }
