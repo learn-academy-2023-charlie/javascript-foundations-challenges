@@ -72,8 +72,8 @@ const totalNum = (array) =>{
     }
     return res
 }
-console.log(totalNum(addThese1))
-console.log(totalNum(addThese2))
+// console.log(totalNum(addThese1))
+// console.log(totalNum(addThese2))
 
 // // output: 10
 // // output: 0
@@ -83,36 +83,73 @@ console.log(totalNum(addThese2))
 const indexHighestNumber = [1, 4, 2, 3]
 
 const largeNum = (array) => {
-    res = ''
-    for (let i = 0; i < array.length; i++)
-        if ()
+    let res = 0
+    for (let i = 0; i < array.length; i++){
+        for (let s = 1; i < array.length; i++){
+            if(array[i] <= array[s])
+            res = s
+            else {
+                res =i
+            }
+        }
+    }return res     
 }
+console.log(largeNum(indexHighestNumber));
+
 // // output: 1
 // 🏔 Stretch Goals
 
 // Create a function that takes in two arrays and returns one array with no duplicate values.
-// const arr1 = [3, 7, 10, 5, 4, 3, 3]
-// const arr2 = [7, 8, 2, 3, 1, 5, 4]
+const arr1 = [3, 7, 10, 5, 4, 3, 3]
+const arr2 = [7, 8, 2, 3, 1, 5, 4]
+
+const unique = (arr1,arr2) => {
+    return new Set(arr1+arr2)
+}
+
+console.log(unique(arr1,arr2))
 // // output: [3, 7, 10, 5, 4, 8, 2, 1]
-// Create a function that takes in two numbers as arguments and returns an array the length of the first number filled with the second number.
+
+// // Create a function that takes in two numbers as arguments and returns an array the length of the first number filled with the second number.
 // const arrayLength = 6
 // const arrayValue = 0
+const arrayLength = 4
+const arrayValue = 11
+// output: [11, 11, 11, 11]
+
+const stretch = (num1,num2) =>{
+    let res = []
+    for (let i = 0; i< num1; i++){
+        res.push(num2)
+    }
+    return res
+}
+console.log(stretch(arrayLength,arrayValue))
 // // output: [0, 0, 0, 0, 0, 0]
 
-// const arrayLength = 4
-// const arrayValue = 11
-// // output: [11, 11, 11, 11]
 // Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function.
-// const addUp1 = 4
 // // 1 + 2 + 3 + 4 = 10
+const addUp1 = 4
 // // output: 10
-
-// const addUp2 = 10
-// // 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
+const addUp2 = 10
 // // output: 55
-
-// const addUp3 = 600
+const addUp3 = 600
 // // output: 180300
+
+const addy =(num1) =>{
+    let res = 0
+    for (let i = 1; i < num1 + 1; i++){
+        res += i
+    }
+    return res
+}
+console.log(addy(addUp1));
+console.log(addy(addUp2));
+console.log(addy(addUp3));
+
+
+// // 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
+
 // 🏔 Epic Goals
 
 // Create a function called highLow that takes in a number and returns whether the number is higher or lower than the "answer".
