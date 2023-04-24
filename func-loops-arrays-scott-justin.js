@@ -40,24 +40,44 @@ console.log(oddArray(testArr2));
 
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
-// const comboArr = [
-//   7,
-//   "n",
-//   true,
-//   "i",
-//   "c",
-//   10,
-//   "e",
-//   -388,
-//   "w",
-//   3,
-//   "o",
-//   0,
-//   "r",
-//   false,
-//   "k"
-// ]
+const comboArr = [
+  7,
+  "n",
+  true,
+  "i",
+  "c",
+  10,
+  "e",
+  -388,
+  "w",
+  3,
+  "o",
+  0,
+  "r",
+  false,
+  "k"
+]
 // // output: "nicework"
+
+// Pseudocode
+// input: array of numbers and letters
+// output: array string of only letters
+// - Create function named funcOne
+// - turn array into string
+// - create 
+// - sort string for only letters with if loop and typeof method
+
+const funcOne = (array) => {
+    let odd = []
+    for(let i = 0; i < array.typeof(letters); i++){
+        if( array[i] % 2 != 0) {
+            odd.push(array[i])
+        }
+        else{}
+    }
+    return odd
+}
+console.log(funcOne(comboArr));
 
 
 // Create a function that takes in an array of numbers and returns the sum.
