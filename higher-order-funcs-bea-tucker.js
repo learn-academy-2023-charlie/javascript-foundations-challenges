@@ -66,26 +66,36 @@ const filterArray = (array) => {
 
 
 
-
 // 🏔 Stretch Goals
-// Create a function that takes in a string and returns a new string with all the vowels removed.
-const str = "javascript is awesome"
-// Pseudo Code:
-// Input = the string
-// Output = the string without vowels
-// Use a function
-// use replace as a higher order function to remove vowels and replace with a new empty string
-// return the string without a vowels
+// // Create a function that takes in a string and returns a new string with all the vowels removed.
+// const str = "javascript is awesome"
+// // Pseudo Code:
+// // Input = the string
+// // Output = the string without vowels
+// // Use a function
+// // use replace as a higher order function to remove vowels and replace with a new empty string
+// // return the string without a vowels
 
-const noVowels = (str) => {
-    return str.replace(/[aeiou]/g,"")
-}
+// const noVowels = (str) => {
+//     return str.replace(/[aeiou]/g,"")
+// }
 // console.log(noVowels(str))
 // // output: "jvscrpt s wsm"
 
 
 
 // Create a function that takes in two arrays as arguments returns one array with no duplicate values.
-// const arr1 = [3, 7, 10, 5, 4, 3]
-// const arr2 = [7, 8, 2, 1, 5, 4]
+
+// pseudo code:
+// Input: takes in two arrays 
+// Output: one array with no duplicate values
+// use a high order function to remove duplicate values
+// return an array with no duplicate values
+
+const arr1 = [3, 7, 10, 5, 4, 3]
+const arr2 = [7, 8, 2, 1, 5, 4]
 // // output: [3, 7, 10, 5, 4, 8, 2, 1]
+
+const noDupes = (array,array2) => {
+    ar
+}
