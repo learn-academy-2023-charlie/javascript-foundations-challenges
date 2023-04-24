@@ -22,11 +22,37 @@ const multiArr =(array) => {
     }
     return newArr
 }
-console.log(multiArr(testArr1))
-// Write a function that takes in an array of numbers and returns a new array with only odd numbers.
+// console.log(multiArr(testArr1))
 
-// const testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
-// // output: [-7, 3, 5, 13]
+
+// Write a function that takes in an array of numbers and returns a new array with only odd numbers.
+//Pseudo Code
+//input: array of numbers
+//output: new array with only odd numbers
+//process: 
+    // create a func called oddNums with paramenter array
+    // create temp val newArr
+    // within oddNums, create a for loop to iterate through the given array
+    // use a comparison operator to determine whether or not the value is odd
+    // store the odd numbers in newArr
+    // return newArr
+
+
+const testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
+// output: [-7, 3, 5, 13]
+
+const oddNums = (array) => {
+    let newArr = []
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 != 0) {
+            newArr.push(array[i])
+        }
+    }
+
+    return newArr
+}
+
+// console.log(oddNums(testArr2));
 
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
