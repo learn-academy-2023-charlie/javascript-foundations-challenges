@@ -20,7 +20,7 @@ const mult3 = (array) => {
     return tripledArray
 }
 
-console.log(mult3(testArr1))
+// console.log(mult3(testArr1))
 // 
 
 // * Write a function that takes in an array of numbers and returns a new array with only odd numbers.
@@ -41,27 +41,27 @@ const thatsALittleOdd = (array) => {
     return oddArray
 }
 
-console.log(thatsALittleOdd(testArr2))
+// console.log(thatsALittleOdd(testArr2))
 
 // output: [-7, 3, 5, 13]
 // * Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
-// const comboArr = [
-//   7,
-//   "n",
-//   true,
-//   "i",
-//   "c",
-//   10,
-//   "e",
-//   -388,
-//   "w",
-//   3,
-//   "o",
-//   0,
-//   "r",
-//   false,
-//   "k"
-// ]
+
+// Pseudo code: 
+// input: function array with letters and numbers
+// output: string with only letters
+const comboArr = [ 7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+//   
+const mailBox = (array) => {
+    let getLetters = ""
+    for (let i=0; i < array.length; i++) {
+        if (typeof array[i] === "string") {
+            getLetters += array[i]
+
+        }
+    }
+    return getLetters
+}
+console.log(mailBox(comboArr));
 // // output: "nicework"
 // * Create a function that takes in an array of numbers and returns the sum.
 // const addThese1 = [1, 2, 3, 4]
