@@ -31,16 +31,24 @@ const testArr1 = [3, 9, 15, 4, 10]
 //name: onlyOdds
 //input: an array of numbers : [0, 2, -7, 3, 5, 8, 10, 13]
 //output: only the odd numbers from the array:  [-7, 3, 5, 13]
-//process: create a function that takes in the array, iterates through it and returns specified values (only odd numbers)
+//process: create a function that takes in the array, iterates through it and if the value is odd then return it into a new array 
+
+// const onlyOdds = (array) => {
+//     let newArray = []
+//     for (let i=0; i<array.length; i++) {
+//         if (array[i] % 2 !== 0) {
+//            newArray.push(array[i])
+//         }
+//     }
+//     return newArray
+// }
+
+// console.log(onlyOdds(testArr2))
+
+//HIGHER ORDER FUNCTION BELOW:
 
 const onlyOdds = (array) => {
-    let newArray = []
-    for (let i=0; i<array.length; i++) {
-        if (array[i] % 2 !== 0) {
-           newArray.push(array[i])
-        }
-    }
-    return newArray
+    return array.filter(value => value % 2 !== 0)
 }
 
 console.log(onlyOdds(testArr2))
