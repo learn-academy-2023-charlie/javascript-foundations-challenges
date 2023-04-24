@@ -12,12 +12,12 @@ const testArr1 = [3, 9, 15, 4, 10]
 //process: create a function that takes an array and multiplies each value by 3 and out puts the result into a new array. 
 
 //const multipleArray = (array) => {
-    let newArray = []
-    for(let i=0; i<array.length; i++){
-        newArray.push(array[i] * 3)
-    }
-    return newArray
-}
+//     let newArray = []
+//     for(let i=0; i<array.length; i++){
+//         newArray.push(array[i] * 3)
+//     }
+//     return newArray
+// }
 //console.log(multipleArray(testArr1))
 
 
@@ -33,14 +33,16 @@ const testArr1 = [3, 9, 15, 4, 10]
 //output: only the odd numbers from the array:  [-7, 3, 5, 13]
 //process: create a function that takes in the array, iterates through it and returns specified values (only odd numbers)
 
-
-const onlyOdds = []
-for (array) {
-    if (array % 2 === 1) {
-        onlyOdds.push(array)
+const onlyOdds = (array) => {
+    let newArray = []
+    for (let i=0; i<array.length; i++) {
+        if (array[i] % 2 !== 0) {
+           newArray.push(array[i])
+        }
     }
+    return newArray
 }
-    
+
 console.log(onlyOdds(testArr2))
 
 //Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
