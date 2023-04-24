@@ -57,9 +57,8 @@ console.log(oddNum(arr2))
 const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 
 const onlyLetters = (array) => {
-    return typeof '${array}.filter((value) => value === "string"'
+    return array.filter(value => typeof(value) === "string").join("")
 }
-
 console.log(onlyLetters(comboArr));
 
 // // output: "nicework"
