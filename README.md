@@ -100,12 +100,16 @@ When you have completed work or you have been informed to start the next challen
 
 > `Click the compare & pull request button`  
 ![PR-Prompt](./assets/pr-prompt.png)  
+
 > `Click the create pull request button`  
 ![Create-PR](./assets/create-pr.png)  
+
 > `Click the merge pull request button`  
 ![Merge-PR](./assets/merge-pr.png)  
+
 > `Click the confirm merge button`  
 ![Confirm-Merge](./assets/confirm-merge.png)  
+
 > `Click the delete branch button to remove the stale branch`  
 ![Delete-Branch](./assets/delete-branch.png)  
 
