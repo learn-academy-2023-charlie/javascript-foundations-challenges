@@ -39,9 +39,6 @@ const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 
 const onlyLetts = (array) => {
 let result = ""
-    // for( let i =0; i < array.lenth; i++) {
-    // if (typeof comboArr[i] === "string")
-    return array.filter((value) => typeof value === "String")
-// }
+    return array.filter((value) => typeof value === "string")
 }
 console.log(onlyLetts(comboArr))
