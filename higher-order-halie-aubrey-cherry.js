@@ -37,12 +37,34 @@ console.log(onlyOdd(arr2))
 const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 // // output: "nicework"
 
+//input: array
+//output: string of letters from array
+//process: make a function that filters letters from input array and adds them to output string by iterating through array, check if the value is a datatype string, pull the string letters, and return pulled letters.
+
+const pickLetter = (array) => {
+    return array.filter(value => typeof(value) === "string").join("")
+
+}
+console.log(pickLetter(comboArr))
 
 
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
-// const filterArrayValues = [58, "", "abcd", true, null, false, 0]
+const filterArrayValues = [58, "", "abcd", true, null, false, 0]
 // // output: [58, "abcd", true]
 
+//input:array
+//output: array subset
+//process: create a function which iterates through array, identifies datatype, filters and returns non-false/non-null/non-0/non-blank into a new array
+
+const falseVal = (array) => {
+    return array.filter(value => typeof(value)){
+    
+    }
+}
+console.log(typeof(falseVal) === boolean);
+
+//if (typeof(value) !== false && typeof(value) !== null && typeof(value) !== 0 && typeof(value) !== undefined)
+console.log(falseVal(filterArrayValues));
 
 // 🏔 Stretch Goals
 
