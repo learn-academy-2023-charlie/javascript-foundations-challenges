@@ -54,24 +54,36 @@ const onlyOdds = (array) => {
 console.log(onlyOdds(testArr2))
 
 //Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
-// const comboArr = [
-//   7,
-//   "n",
-//   true,
-//   "i",
-//   "c",
-//   10,
-//   "e",
-//   -388,
-//   "w",
-//   3,
-//   "o",
-//   0,
-//   "r",
-//   false,
-//   "k"
-// ]
+const comboArr = [
+  7,
+  "n",
+  true,
+  "i",
+  "c",
+  10,
+  "e",
+  -388,
+  "w",
+  3,
+  "o",
+  0,
+  "r",
+  false,
+  "k"
+]
 // // output: "nicework"
+
+
+//input: array of numbers and letters
+//output: only the values of the array that are letters (datatype string) and returns a string : "nicework"
+//process: create a function that takes in array, iterates through the entire array to identify which values are letters (dataype of string) and returns a string.
+
+const onlyLetters = (array) => {
+    return array.filter(value =>  )
+}
+
+console.log(onlyLetters(comboArr))
+
 // Create a function that takes in an array of numbers and returns the sum.
 // const addThese1 = [1, 2, 3, 4]
 // // output: 10
