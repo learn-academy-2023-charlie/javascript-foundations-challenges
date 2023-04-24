@@ -98,16 +98,16 @@ Use these commands to add the code you have on your local machine to GitHub:
 ### Merging Code to Main Branch Remotely
 When you have completed work or you have been informed to start the next challenge, push local code to GitHub then follow the prompts on GitHub to create a pull request (PR)
 
-> `Click the compare & pull request button`
-![PR-Prompt](./assets/pr-prompt.png)
-> `Click the create pull request button`
-![Create-PR](./assets/create-pr.png)
-> `Click the merge pull request button`
-![Merge-PR](./assets/merge-pr.png)
-> `Click the confirm merge button`
-![Confirm-Merge](./assets/confirm-merge.png)
-> `Click the delete branch button to remove the stale branch`
-![Delete-Branch](./assets/delete-branch.png)
+> `Click the compare & pull request button`  
+![PR-Prompt](./assets/pr-prompt.png)  
+> `Click the create pull request button`  
+![Create-PR](./assets/create-pr.png)  
+> `Click the merge pull request button`  
+![Merge-PR](./assets/merge-pr.png)  
+> `Click the confirm merge button`  
+![Confirm-Merge](./assets/confirm-merge.png)  
+> `Click the delete branch button to remove the stale branch`  
+![Delete-Branch](./assets/delete-branch.png)  
 
 
 ### Deleting a Branch Locally
