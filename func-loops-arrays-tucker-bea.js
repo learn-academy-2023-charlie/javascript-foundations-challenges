@@ -26,21 +26,6 @@
 
 
 // Write a function that takes in an array of numbers and returns a new array with only odd numbers.
-const testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
-
-const oddNums = (array) => {
-    let newNums = []
-    for (let i = 0; i < array.length; i++){
-        if (array[i] % 2 !== 0){
-            newNums.push(array[i])
-        }
-    }
-    return newNums
-}
-
-console.log(oddNums(testArr2))
-
-// output: [-7, 3, 5, 13]
 
 //Pseudocode:
 // Input: an array of numbers
@@ -49,33 +34,67 @@ console.log(oddNums(testArr2))
 // Iterate through an array using a for loop
 // Return an array with odd numbers
 
+// const testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
 
+// const oddNums = (array) => {
+//     let newNums = []
+//     for (let i = 0; i < array.length; i++){
+//         if (array[i] % 2 !== 0){
+//             newNums.push(array[i])
+//         }
+//     }
+//     return newNums
+// }
 
+// console.log(oddNums(testArr2))
 
-
+// output: [-7, 3, 5, 13]
 
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method.
-// const comboArr = [
-//   7,
-//   "n",
-//   true,
-//   "i",
-//   "c",
-//   10,
-//   "e",
-//   -388,
-//   "w",
-//   3,
-//   "o",
-//   0,
-//   "r",
-//   false,
-//   "k"
-// ]
+
+// Pseudo code:
+// Input: an array of numbers and letters
+// Output: a string with only the letters
+// Creating a function onlyLetters
+// Iterate through the array and find all the indexes containing all the letters
+// Store the letters in a new array
+// Convert the array into a string
+// Return the output into a string
+
+
+// const comboArr = [  7, "n", true, "i", "c", 10, "e",-388,"w",3,"o",0,"r",false,"k"]
 // // output: "nicework"
+
+// const onlyLetters = (array) => {
+//     let newArr = []
+//     for (let i = 0; i < array.length; i++) {
+//         if (typeof array[i] === "string")
+//         newArr.push(array[i])
+//     }
+//     return (newArr.join(""))
+// }
+// console.log(onlyLetters(comboArr))
+
+
 // Create a function that takes in an array of numbers and returns the sum.
-// const addThese1 = [1, 2, 3, 4]
+// Pseudo code:
+// Input: an array of numbers
+// Output: the sum of the numbers
+// Creating a function sum
+// Iterate through the array and sum the numbers
+// Return the sum
+
+const addThese1 = [1, 2, 3, 4]
+
+// const numsToSum = (array) => {
+//     let sum = 0 
+//     for (let i = 0; i < array.length; i++) {
+//         sum = (array[i] + sum)
+//     }
+//     return sum
+// }
+// console.log(numsToSum(addThese1));
 // // output: 10
 
 // const addThese2 = []
