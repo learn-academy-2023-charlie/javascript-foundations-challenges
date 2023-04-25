@@ -130,3 +130,15 @@
 // const arr1 = [3, 7, 10, 5, 4, 3]
 // const arr2 = [7, 8, 2, 1, 5, 4]
 // // output: [3, 7, 10, 5, 4, 8, 2, 1]
+
+//PseudoCode
+//input: two arrays: arr1 + arr2
+//output: one array, no duplicate values [3, 7, 10, 5, 4, 8, 2, 1]
+//process:
+//Create a function that iterates through two arrays and returns one array with no duplicate values. Function name noDups
+
+const noDups = (array1 , array2) => {
+    return array1.concat(array2).filter (value => {
+        return value.has()
+    })
+}
