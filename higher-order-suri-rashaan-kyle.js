@@ -67,9 +67,14 @@ const capArr = (element) => {
 console.log(capArr(makesWackyWords))
 
 // Create a function that takes in a string and returns a new string with all the vowels removed.
-// const str = "javascript is awesome"
+const str = "javascript is awesome"
+const vowels= ["a", "e", "i", "o", "u"]
 // // output: "jvscrpt s wsm"
 
+const noVowel = (element) => {
+    return element.slice(value => value.includes(vowels))
+}
+console.log(noVowel(str))
 
 // Create a function that takes in a string containing numbers and returns an array with each number at its own index and converted to the data type of number.
 // const stringOfNumbers = "4574328"
