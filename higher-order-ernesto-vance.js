@@ -42,3 +42,42 @@ let result = ""
     return array.filter((value) => typeof value === "string")
 }
 console.log(onlyLetts(comboArr))
+
+// Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
+// const filterArrayValues = [58, "", "abcd", true, null, false, 0]
+// // output: [58, "abcd", true]
+
+// Pseudo code
+// input: an array
+// output: a filtered array
+// process: use a for loop
+
+const filterArrayValues = [58, "", "abcd", true, null, false, 0]
+
+const index = filterArrayValues.indexOf(1, 4, 5, 6)
+const x = filterArrayValues.splice(index, 1, 4, 5, 6)
+
+const filterArr = (array) => {
+    return array.filter(value => value)
+}
+console.log(filterArr(filterArrayValues))
+
+
+
+// Create a function that takes in an array of strings and returns an array of strings with every other letter capitalized.
+// const makesWackyWords = ["simba", "nala", "zazu", "rafiki"]
+// // output: ["sImBa", "nAlA", "zAzU", "rAfIkI"]
+// Create a function that takes in a string and returns a new string with all the vowels removed.
+// const str = "javascript is awesome"
+// // output: "jvscrpt s wsm"
+// Create a function that takes in a string containing numbers and returns an array with each number at its own index and converted to the data type of number.
+// const stringOfNumbers = "4574328"
+// // output: [7, 8, 2, 1, 5, 4]
+// 🏔 Stretch Goals
+// Create a function that takes in two arrays as arguments returns one array with no duplicate values.
+// const arr1 = [3, 7, 10, 5, 4, 3]
+// const arr2 = [7, 8, 2, 1, 5, 4]
+// // output: [3, 7, 10, 5, 4, 8, 2, 1]
+// Create a function that takes in an array of mixed data types and returns the first value that is a string. HINT: look into the JavaScript .find() method.
+// const allTheData = [7, null, true, 2, "yo!", false, 4, "hello!"]
+// // output: "yo!"
