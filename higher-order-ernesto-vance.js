@@ -37,11 +37,11 @@ const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 // output: a single string with only the letters from the array
 // process: declare function called onlyLetts, and we use the .filter() built-in method because we want to exclude certain elements from the original array
 
-const onlyLetts = (array) => {
-let result = ""
-    return array.filter((value) => typeof value === "string")
-}
-console.log(onlyLetts(comboArr))
+// const onlyLetts = (array) => {
+// let result = ""
+//     return array.filter((value) => typeof value === "string")
+// }
+// console.log(onlyLetts(comboArr))
 
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
 // const filterArrayValues = [58, "", "abcd", true, null, false, 0]
@@ -50,26 +50,57 @@ console.log(onlyLetts(comboArr))
 // Pseudo code
 // input: an array
 // output: a filtered array
-// process: use a for loop
+// process: 
 
-const filterArrayValues = [58, "", "abcd", true, null, false, 0]
+// const filterArrayValues = [58, "", "abcd", true, null, false, 0]
 
-const index = filterArrayValues.indexOf(1, 4, 5, 6)
-const x = filterArrayValues.splice(index, 1, 4, 5, 6)
+// const index = filterArrayValues.indexOf(1, 4, 5, 6)
+// const x = filterArrayValues.splice(index, 1)
 
-const filterArr = (array) => {
-    return array.filter(value => value)
-}
-console.log(filterArr(filterArrayValues))
+// const filterArr = (array) => {
+//     return array.filter(value => value)
+// }
+// console.log(filterArr(filterArrayValues))
 
 
 
 // Create a function that takes in an array of strings and returns an array of strings with every other letter capitalized.
+// pseudocode: 
+    // input: an array of strings
+    // output: an array of strings with every other character capitalized
+    // method: create a function called capitalizeEveryOtherLetter and use the .map() method to iterate accross the entire array
 // const makesWackyWords = ["simba", "nala", "zazu", "rafiki"]
+//  function capitalizeEveryOtherLetter(arr){
+//     return arr.map(str =>{
+//         let capitalizedStr = ""
+//         for (let i = 0; i < str.length; i++){
+//             if ( i % 2 === 0){
+//                 capitalizedStr += str[i].toUpperCase()
+//             }   else {
+//                 capitalizedStr += str[i]
+//             }
+//         }
+//         return capitalizedStr
+//     })
+//  }
+// console.log(capitalizeEveryOtherLetter(makesWackyWords))
+
 // // output: ["sImBa", "nAlA", "zAzU", "rAfIkI"]
+
+
+
 // Create a function that takes in a string and returns a new string with all the vowels removed.
+// Pseudocode: 
+    // input: a string
+    // output: a string without vowels
+    // method: use the .replace() function to create a new string without vowels. used chat gpt to get the syntax correct
 // const str = "javascript is awesome"
+
+
+// let newString = str.replace(/[aeiou]/gi, '')
+// console.log(newString)
 // // output: "jvscrpt s wsm"
+
 // Create a function that takes in a string containing numbers and returns an array with each number at its own index and converted to the data type of number.
 // const stringOfNumbers = "4574328"
 // // output: [7, 8, 2, 1, 5, 4]
