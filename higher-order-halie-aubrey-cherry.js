@@ -137,8 +137,11 @@
 //process:
 //Create a function that iterates through two arrays and returns one array with no duplicate values. Function name noDups
 
-const noDups = (array1 , array2) => {
-    return array1.concat(array2).filter (value => {
-        return value.has()
-    })
-}
+const arr1 = [3, 7, 10, 5, 4, 3]
+const arr2 = [7, 8, 2, 1, 5, 4]
+const noDups = (array1, array2) => {
+    return [].concat(array1, array2).filter((value, index, array) => array.indexOf(value) === index)
+    }
+console.log(noDups(arr1, arr2))
+
+//The indexOf() method returns the position of the first occurrence of a value in a string. The indexOf() method returns -1 if the value is not found. The indexOf() method is case sensitive.
