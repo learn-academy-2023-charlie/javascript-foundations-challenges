@@ -61,31 +61,53 @@ const makesWackyWords = ["simba", "nala", "zazu", "rafiki"]
 // // output: ["sImBa", "nAlA", "zAzU", "rAfIkI"]
 
 const capArr = (element) => {
-    return element.map ((value,index) => {value[index].toUpperCase() 
-    return index % 2 != 0})
+    return element.map((value) => value).join(' ').toUpperCase(index %2 != 0)
 }
 console.log(capArr(makesWackyWords))
 
 // Create a function that takes in a string and returns a new string with all the vowels removed.
 const str = "javascript is awesome"
-const vowels= ["a", "e", "i", "o", "u"]
+const vowels= 'aeiou'
 // // output: "jvscrpt s wsm"
 
 const noVowel = (element) => {
-    return element.slice(value => value.includes(vowels))
+    return element.split("").filter(value => value.replace(/[aeiou]/g,'')).join(' ')
 }
 console.log(noVowel(str))
 
 // Create a function that takes in a string containing numbers and returns an array with each number at its own index and converted to the data type of number.
-// const stringOfNumbers = "4574328"
+const stringOfNumbers = "4574328"
+
+const strNum = (element) => {
+    return element.split("").map(value => Number(value))
+
+}
+
+console.log(strNum(stringOfNumbers))
 // // output: [7, 8, 2, 1, 5, 4]
 
 
 // 🏔 Stretch Goals
 // Create a function that takes in two arrays as arguments returns one array with no duplicate values.
-// const arr1 = [3, 7, 10, 5, 4, 3]
-// const arr2 = [7, 8, 2, 1, 5, 4]
+const arr3 = [3, 7, 10, 5, 4, 3]
+const arr4 = [7, 8, 2, 1, 5, 4]
+[3, 7, 10, 5, 4, 3, 7, 8, 2, 1, 5, 4]
+
+const joinArr = (element,element1) => {
+    return new Set(element.concat(element1))
+} 
+
+console.log(joinArr(arr3,arr4));
+
 // // output: [3, 7, 10, 5, 4, 8, 2, 1]
+
 // Create a function that takes in an array of mixed data types and returns the first value that is a string. HINT: look into the JavaScript .find() method.
-// const allTheData = [7, null, true, 2, "yo!", false, 4, "hello!"]
+
+const allTheData = [7, null, true, 2, "yo!", false, 4, "hello!"]
+
+const firstString = (element) => {
+    return element.find(value => typeof value ==='string')
+}
+
+console.log(firstString(allTheData))
 // // output: "yo!"
