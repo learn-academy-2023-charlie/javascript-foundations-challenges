@@ -133,13 +133,9 @@ const makesWackyWords = ["simba", "nala", "zazu", "rafiki"]
 // output: array of strings, every other letter capital
 // Process: create a function named oddCapitals. Use the function to iterate through the array, select all odd-indexed letters, and return an array with all odd-indexed letters capitalized
 
-const oddCapitals = (array) => {
-    return array.map((value, index) => {
-        (value, index % 2 === 0).toUpperCase() + (value, index % 2 !== 0)
-    })
-}
-
-
+const oddCapitals = (array) =>
+    array.join("").split("").map((value, index) =>
+        index % 2 !== 0 ? value.toString("").toUpperCase() : value).join("")
 
 console.log(oddCapitals(makesWackyWords))
 
