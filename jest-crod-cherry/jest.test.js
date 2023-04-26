@@ -4,7 +4,7 @@
 
 // Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired.
 
-describe(coffeeOrWork, () => {
+describe("coffeeOrWork", () => {
     it("returns drink coffee or keep working based on input", () => {
         expect(coffeeOrWork("yes")).toEqual("drink coffee")
         expect(coffeeOrWork("no")).toEqual("keep working")
@@ -16,6 +16,30 @@ describe(coffeeOrWork, () => {
 //   ReferenceError: coffeeOrWork is not defined
 
 // Create the function that will make the test pass.
+    //Psuedocode:
+        //input: string "yes" or "no"
+        //output: string "drink coffee" or "keep working"
+        //process create a function named coffeeOrWork 
+        //use a conditional if/else to determine our output
+        //expected output is a string "drink coffee" or "keep working"
+
+// const coffeeOrWork = (string) => {
+//     let tired = string
+//     return tired === "yes" ? "drink coffee" : "keep working"
+// }
+
+//Output  PASS  ./jest.test.js
+//   coffeeOrWork
+//   ✓ returns drink coffee or keep working based on input (1 ms)
+
+//Refactor 
+
+const coffeeOrWork = (string) => {
+    return string === "yes" ? "drink coffee" : "keep working"
+}
+
+
+
 // Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
 // Create the function that will make the test pass.
 // Write the test for a function that returns "in budget" if a price is lower than $300.
