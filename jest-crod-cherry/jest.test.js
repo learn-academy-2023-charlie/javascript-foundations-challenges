@@ -41,7 +41,48 @@ const coffeeOrWork = (string) => {
 
 
 // Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
+
+describe("stressTest", () => {
+    it("returns relax if stressed and keep going if not stressed", () => {
+        expect(stressTest("yes")).toEqual("relax")
+        expect(stressTest("no")).toEqual("keep going")
+    })
+})
+//Red test ouput:
+// FAIL  ./jest.test.js
+// coffeeOrWork
+//   ✓ returns drink coffee or keep working based on input (11 ms)
+// stressTest
+//   ✕ returns relax if stressed and keep going if not stressed (1 ms)
+
+// ● stressTest › returns relax if stressed and keep going if not stressed
+
+//   ReferenceError: stressTest is not defined
+
 // Create the function that will make the test pass.
+
+//psuedocode
+//input: string of yes or no
+//output: string of relax or keep going
+//process: create a function that takes a yes/no parameter and conditionally returns relax or keep going
+
+// const stressTest = (string) => {
+//     let stressed = string
+//     return stressed === "yes" ? "relax" : "keep going"
+// }
+// Greentest output:
+// PASS  ./jest.test.js
+// coffeeOrWork
+//   ✓ returns drink coffee or keep working based on input (9 ms)
+// stressTest
+//   ✓ returns relax if stressed and keep going if not stressed (2 ms)
+
+//Refactor:
+
+const stressTest = (string) => {
+    return string === "yes" ? "relax" : "keep going"
+}
+
 // Write the test for a function that returns "in budget" if a price is lower than $300.
 // Create the function that will make the test pass.
 // Write the test for a function that takes in two numbers and returns the smaller number.
