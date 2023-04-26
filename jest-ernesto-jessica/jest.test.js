@@ -83,9 +83,42 @@ describe(areYouStressed, () => {
 
 // Write the test for a function that returns "in budget" if a price is lower than $300.
 
+// describe("isItInBudget", () => {
+//     it("returns whether or not we can afford something", () => {
+//         expect(isItInBudget("yes")).toEqual("This is in budget")
+//         expect(isItInBudget("no")).toEqual("this is too expensive")
+//     })
+// })
+//Fail:
+    // FAIL  ./jest.test.js
+    // drinkCoffee
+    //   ✓ return whether or not to drink coffee (6 ms)
+    // areYouStressed
+    //   ✓ returns whether or not to relax
+    // isItInBudget
+    //   ✕ returns whether or not we can afford something (3 ms)
+
+    // ● isItInBudget › returns whether or not we can afford something
+
+    //   ReferenceError: isItInBudget is not defined
 
 
 // Create the function that will make the test pass.
+
+const isItInBudget = (expensive) => {
+    if (expensive < 300) {
+        return "This is in budget"
+    } else {
+        return "This is too expensive"
+    }
+}
+describe("isItInBudget", () => {
+    it("returns whether or not we can afford something", () => {
+        expect(isItInBudget(true)).toEqual("This is in budget")
+        expect(isItInBudget(false)).toEqual("This is too expensive")
+    })
+})
+
 // Write the test for a function that takes in two numbers and returns the smaller number.
 // Create the function that will make the test pass.
 // Write the test for a function that takes in one numbers and returns whether the number is odd.
