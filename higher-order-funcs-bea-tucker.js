@@ -115,12 +115,41 @@ const oddChars = (aString) => {
     newArr = aString.split(' ')
         return newArr.filter(value => value.length % 2 === 1)
 } 
-console.log(oddChars(pumbaa))
+// console.log(oddChars(pumbaa))
 // output: ["a", "wonderful", "ain't", "passing", "craze"]
 
 
 // Create a function that takes in an array of strings and returns an array of strings with every other letter capitalized.
-// const makesWackyWords = ["simba", "nala", "zazu", "rafiki"]
+const makesWackyWords = ["simba", "nala", "zazu", "rafiki"]
+// Pseudo Code:
+// Input: An array of strings
+// Output: an array of strings with every other letter capitalized
+// Create a function
+// Iterate and capitalize every other letter
+// Return the new array
+
+const wackWords = (array) => {
+    // let newArr = array.join("")
+    // console.log(newArr)
+    return array.join("").split("").map((value, index) => index % 2 === 1 ? value.toString().toUpperCase() : value).join("")
+
+}
+
+console.log(wackWords(makesWackyWords))
+
+
+
+
+// const wackWords = (arrays) => {
+//     return arrays.map((array) => {
+//         return array.split('').map((letter, index) => {
+//             return index % 2 === 1 ? letter.toUpperCase() : letter
+//     }).join('')
+//     })
+// }
+ 
+
+// console.log(wackWords(makesWackyWords))
 // // output: ["sImBa", "nAlA", "zAzU", "rAfIkI"]
 
 // Create a function that takes in an array of mixed data types and returns the first value that is a string. HINT: look into the JavaScript .find() method.
