@@ -54,15 +54,6 @@
 //     }
 // }
 
-
-
-
-
-
-
-
-
-
 // Write the test for a function that returns "in budget" if a price is lower than $300.
 
 describe("youBroke", () => {
@@ -72,6 +63,7 @@ describe("youBroke", () => {
         });
 })
 
+// Create the function that will make the test pass.
 const youBroke = (string) => {
 if (string === true){
     return "in budget"
@@ -79,13 +71,85 @@ if (string === true){
     return "you a broke ass ho"
 }
 }
-// Create the function that will make the test pass.
+
+
 // Write the test for a function that takes in two numbers and returns the smaller number.
+// 1. Write the test
+describe("twoNums", () => {
+    it("returns smaller number of the two", () => {
+        expect(twoNums(num1, num2)).toEqual(10);
+        });
+})
+// 2. See the test fail
+// twoNums › returns smaller number of the two
+// 3. Write the code
+// Pseudocode
+// input: two numbers
+// output: the smaller number of the two
+// function name: twoNums
+// methods: if statement 
+// compare both numbers 
+// return: the smaller number
+
 // Create the function that will make the test pass.
+let num1 = 10
+let num2 = 20
+const twoNums = (num1, num2) => {
+    if (num1 > num2){
+        return num2
+    } else if (num2 > num1) {
+        return num1
+    } 
+    }
+
+// 4. See the test pass
+// 5. Refactor, if necessary
+
 // Write the test for a function that takes in one numbers and returns whether the number is odd.
+describe("oddNum", () => {
+    it("returns smaller number of the two", () => {
+        expect(oddNum(num3)).toEqual("This number is odd.");
+        });
+})
 // Create the function that will make the test pass.
+// Pseudocode:
+// input: one number in a variable
+// output: the string "This number is odd."
+// function name: oddNum
+// methods: conditional if statement and % arithmetic operator
+// return: "This number is odd." if the number is odd
+let num3 = 11
+const oddNum = (num3) => {
+    if(num3 % 2 !=0 ){
+        return "This number is odd." 
+    } else {"This number is not odd"}
+}
 // Write the test for a function that takes in a fruit and returns "yellow" if the argument is banana, "red" if apple and "purple" if grape.
+describe("fruitColor", () => {
+    it("returns yellow if the argument is banana, red if apple, and purple if grape.", () => {
+        expect(fruitColor("banana")).toEqual("yellow");
+        expect(fruitColor("apple")).toEqual("red");
+        expect(fruitColor("grape")).toEqual("purple");
+        });
+})
 // Create the function that will make the test pass.
+// Pseudocode:
+// input: a string of a fruit
+// output: the color of the fruit, either yellow, red, or purple
+// function name: fruitColor
+// methods: if statement conditional 
+// return: "yellow" if banana, "red" if apple, "purple if grape"
+let fruit = "apple"
+const fruitColor = (fruit) => {
+    if (fruit === "apple"){
+        return "red"
+    }else if (fruit === "banana"){
+        return "yellow"
+    }else if (fruit === "grape"){
+        return "purple"
+    }
+}
+
 // Write the test for a function called rick that returns "Morty".
 // Create the function that will make the test pass.
 // Write the test for a function called greeter that takes a name as an argument and returns a greeting with that name to the screen.
