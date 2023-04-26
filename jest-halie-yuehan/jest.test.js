@@ -120,7 +120,7 @@ describe("smallestNum",() => {
 //input: num1, num2
 //output: return a smaller number 
 //process: create a function that takes in 2 num and return a num that's smaller.
-//  Use math.min with num1 and num2.
+//  Use condtional statement. to get desire result
 
 const smallestNum = (num1, num2) => {
     if (num1 < num2){
