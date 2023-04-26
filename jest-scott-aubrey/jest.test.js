@@ -1,15 +1,47 @@
 // Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired.
 // Create the function that will make the test pass.
 
-const coffee = "drink coffee"
-const work = "keep working"
+// const coffee = "drink coffee"
+// const work = "keep working"
 
-describe("workTime", () => {
-    it("drink coffee"), () => {
- expect(workTime()).toEqual("keep working")   
-}
+// describe("workTime", () => {
+//     it("drink coffee"), () => {
+//  expect(workTime()).toEqual("keep working")   
+// }
+// })
+
+
+const drinkCof = "drink coffee"
+const keepW = "keep working"
+describe("workTime", (a, b) => {
+    it("drink coffee", () => {
+    expect(workTime()).toEqual("keep working")
+  })
 })
 
+
+const workTime =  (string1, string2) => {
+    if (string1 === true) {
+        return drinkCof }
+            else if(string2 === true)
+                return keepW
+                else workTime
+        }
+        console.log(workTime(true))
+
+
+
+
+
+
+
+
+
+
+
+// const workTime =  (string1, string2) => {
+// return string1 === true ? `drink coffee`: `keep working`;
+// }
 
 // Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
 // Create the function that will make the test pass.
