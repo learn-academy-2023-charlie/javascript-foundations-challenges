@@ -62,6 +62,26 @@ console.log(relaxTest)
 // Write the test for a function that returns "in budget" if a price is lower than $300.
 // Create the function that will make the test pass.
 
+describe('budgetTest', () => {
+  it('returns "in budget" if price is lower than 300', () => {
+    expect(budgetTest(true)).toEqual("in budget");
+  });
+
+});
+
+
+let budget = 299
+
+const budgetTest= (inBudget) => {
+  if(inBudget < 300){
+      return "in budget"
+  }
+  else{
+      return "not in budget"
+  }
+}  
+console.log(budgetTest)
+
 
 // Write the test for a function that takes in two numbers and returns the smaller number.
 // Create the function that will make the test pass.
