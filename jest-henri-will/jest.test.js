@@ -94,3 +94,14 @@ const stressTest = (string) => {
 //   ✓ informs student to relax if stresssed or keep going if not (1 ms)
 
 
+// prompt - write the test for a function that returns "in budget" if a price is lower than $300
+
+// pseudocode:
+
+// input - number
+// output - string
+// process:
+// function name -> stressTest
+// create a parameter called "string"
+// compare the string to "yes"
+// expected output: if true "relax", i
