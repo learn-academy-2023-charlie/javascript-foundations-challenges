@@ -70,11 +70,71 @@ describe ("budgetChecker", () => {
 
 
 // Write the test for a function that takes in two numbers and returns the smaller number.
+describe("smallerNum", () => {
+    it("returns smaller number", () => {
+        expect(smallerNum()).toEqual()
+    })
+})
+
 // Create the function that will make the test pass.
+// Pseudo Code:
+// Input: two separate numbers
+// Output: the smaller of the two
+// Process:
+    // Create a function named smallerNum
+    // Use conditionals if num1 is greater than num2, else return num2
+
+    const smallerNum = (num1, num2) => {
+        return num1 > num2 ? num2 : num1
+    }
+
 // Write the test for a function that takes in one numbers and returns whether the number is odd.
+describe("oddChecker", () => {
+    it("checks to see if number is odd", () => {
+        expect(oddChecker(1)).toEqual("The number is odd")
+        expect(oddChecker(0)).toEqual("The number is not odd")
+
+    })
+})
+
 // Create the function that will make the test pass.
+// Pseudo Code: 
+// Input: takes in a number
+// Output: retruns wether number is odd
+// Process:
+    // Create a function called oddChecker
+    // use conditional to see if num % 2 = 1 to see if it is odd
+    // return a statement saying yes it is odd or no it is not
+
+    const oddChecker = (num) => {
+        return num % 2 === 1 ? "The number is odd" : "The number is not odd"
+    }
+
 // Write the test for a function that takes in a fruit and returns "yellow" if the argument is banana, "red" if apple and "purple" if grape.
+describe("fruitColors", () => {
+    it("returns a different color for each fruit", () => {
+        expect(fruitColors("banana")).toEqual("yellow")
+        expect(fruitColors("apple")).toEqual("red")
+        expect(fruitColors("grape")).toEqual("purple")
+    })
+})
+
 // Create the function that will make the test pass.
+// Pseudo Code:
+// Input: a fruit as a string
+// Output: a color as a string
+// Process:
+    // Create the function named fruitColors
+    // Use ternary as our conditionals
+    // Retrun each color with its respected fruit
+
+    const fruitColors = (fruit) => {
+        return fruit === "banana" ? "yellow" : fruit === "apple" ? "red" : "purple"
+    }
+
+
+
+
 // Write the test for a function called rick that returns "Morty".
 // Create the function that will make the test pass.
 // Write the test for a function called greeter that takes a name as an argument and returns a greeting with that name to the screen.
