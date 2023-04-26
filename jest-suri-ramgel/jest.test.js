@@ -34,6 +34,30 @@ console.log(coffeeTest)
 // Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
 // Create the function that will make the test pass.
 
+describe('relaxTest', () => {
+  it('returns "relax" if you are stressed', () => {
+    expect(relaxTest(true)).toEqual("relax");
+  });
+
+  it('returns "keep going" if you are not tired', () => {
+    expect(relaxTest(false)).toEqual("keep going");
+  });
+});
+
+let relax = "relax"  
+let stressed = "keep going"
+
+
+const relaxTest= (isTired) => {
+  if(isTired === true){
+      return "relax"
+  }
+  else{
+      return "keep going"
+  }
+}  
+console.log(relaxTest)
+
 
 // Write the test for a function that returns "in budget" if a price is lower than $300.
 // Create the function that will make the test pass.
