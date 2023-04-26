@@ -43,12 +43,12 @@
 // Create the function that will make the test pass.
 
 
-describe("areYouStressed",() => {
-        it("returns 'relax' if you are stressed and 'keep going' if you are not stressed.",() => {
-            expect(areYouStressed("yes")).toEqual ("relax")
-            expect(areYouStressed("no")).toEqual ("keep going")
-        })
-    })
+// describe("areYouStressed",() => {
+//         it("returns 'relax' if you are stressed and 'keep going' if you are not stressed.",() => {
+//             expect(areYouStressed("yes")).toEqual ("relax")
+//             expect(areYouStressed("no")).toEqual ("keep going")
+//         })
+//     })
 
     //pseudocode:
 //Function Name: areYouStressed
@@ -59,22 +59,77 @@ describe("areYouStressed",() => {
 //process: create a function that takes in a string (either "yes" or " no") and returns a string of "relax" or "keep going". Use a conditional operator. (if / else if / else)
 
 
-    const areYouStressed = (strings) => {
-            if (strings === "yes") {
-                return "relax"
-            }
-            else if (strings === "no") {
-                return "keep going"
-            }
+//     const areYouStressed = (strings) => {
+//             if (strings === "yes") {
+//                 return "relax"
+//             }
+//             else if (strings === "no") {
+//                 return "keep going"
+//             }
         
-        }
-
+//         }
+// test result:
+//         PASS  ./jest.test.js
+//         areYouStressed
+//           ✓ returns 'relax' if you are stressed and 'keep going' if you are not stressed. (4 ms)
+      
 
 // Write the test for a function that returns "in budget" if a price is lower than $300.
+
+// describe("inBudget",() => {
+//     it("returns 'in budget' if if a price is lower than $300.",() => {
+//         expect(inBudget(100)).toEqual ("in budget")
+//         expect(inBudget(300)).toEqual ("not in budget")
+//     })
+// })
+
 // Create the function that will make the test pass.
+//pseudocode:
+//Function Name: inBudget
+//input: (num < 300) or (num >= 300)
+//output: return "in budget" if the input is less than 300, 
+//return "not in budget" if the input is >= 300
+//process: create a function that takes in a num (either (num < 300) or (num >= 300) and returns a string of "in budget" or "not in budget". Use a conditional operator. (if / else if / else)
+
+
+
+// const inBudget = (num) => {
+    
+// if (num < 300){
+//     return "in budget"
+// } else {
+//     return "not in budget"
+// }
+// }
+
+// PASS  ./jest.test.js
+// inBudget
+//   ✓ returns 'in budget' if if a price is lower than $300. (6 ms)
 
 
 // Write the test for a function that takes in two numbers and returns the smaller number.
+
+describe("smallestNum",() => {
+    it("returns the smaller number.",() => {
+        expect(smallestNum(12, 9)).toEqual (9)
+    })
+})
+
+//pseudocode:
+//Function Name: smallestNum
+//input: num1, num2
+//output: return a smaller number 
+//process: create a function that takes in 2 num and return a num that's smaller.
+//  Use math.min with num1 and num2.
+
+const smallestNum = (num1, num2) => {
+    if (num1 < num2){
+        return num1
+    } else if (num2 < num1){
+        return num2
+    }
+}
+
 // Create the function that will make the test pass.
 // Write the test for a function that takes in one numbers and returns whether the number is odd.
 // Create the function that will make the test pass.
