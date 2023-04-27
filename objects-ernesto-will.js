@@ -67,7 +67,7 @@ const product = {
   const totalWithTax = (object) => {
     return (object.price + (object.price * .07)).toFixed(2)
   }
-  console.log(totalWithTax(product))
+//   console.log(totalWithTax(product))
   // output: 26.74
 
 
@@ -79,7 +79,38 @@ const product = {
     ingredients: ["bread", "peanut butter", "banana"]
   }
 
-//   Write the code that accesses the ingredients property.
+// Write the code that accesses the ingredients property.
+// PseudoCode:
+  // input: object
+  // output: array 
+  // method: print out the ingredients property values
+
+//   console.log(lunch.ingredients);
+//   [ 'bread', 'peanut butter', 'banana' ]
+
+
+
 // Write the code that access the third ingredient of the lunch object.
+// PseudoCode:
+  // input: object
+  // output: array 
+  // method: print out the ingredients property values located at the second index
+
+//   console.log(lunch.ingredients[2]);
+//   banana
+
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+// PseudoCode:
+  // input: object
+  // output:  string
+  // method: function name: aString
+    // Print out a string using string interpolation to call upon the values within the object and make a sentence
+
+const aString = (object) => {
+    return `The ingredients for a ${object.name} ${object.type} are ${object.ingredients[0]}, ${object.ingredients[1]}, and ${object.ingredients[2]}.`
+}
+
+
+// console.log(aString(lunch));
+// "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana.""
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
