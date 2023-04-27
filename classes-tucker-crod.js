@@ -96,3 +96,24 @@
 // Write a class that calculates the volume of a Cylinder: v = πr^2h (r is the radius and h is the height of the cylinder)
 // Write the code that rounds the volume of the cylinder to four decimal places
 // Write the code that creates three unique cylinder objects
+
+class Cylinder {
+    constructor(radius, height){
+        this.radius = radius
+        this.height = height
+    }
+
+    getData(){
+        return (Math.PI * Math.pow(this.radius, 2) * this.height).toFixed(4);
+    }
+}
+
+const volume = new Cylinder (10, 20)
+
+const cylinder1 = new Cylinder(3, 6);
+const cylinder2 = new Cylinder(6, 5);
+const cylinder3 = new Cylinder(4, 8);
+console.log(volume.getData())
+
+console.log(cylinder1.getData(),cylinder2.getData(), cylinder3.getData()) 
+    //output: 169.6460 565.4867 402.1239
