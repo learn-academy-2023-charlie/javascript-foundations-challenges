@@ -66,28 +66,82 @@
 // console.log(totalWithTax(product))
 
 // Output: 26.74
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
 // Consider this variable:
+
+
+// Write the code that accesses the ingredients property.
+// console.log(lunch.ingredients);
+// output: [ 'bread', 'peanut butter', 'banana' ]
+
+// // Write the code that access the third ingredient of the lunch object.
+// console.log(lunch.ingredients[2]);
+// output:banana
 
 // const lunch = {
-//   name: "PB and Banana",
-//   type: "sandwich",
-//   ingredients: ["bread", "peanut butter", "banana"]
+//     name: "PB and Banana",
+//     type: "sandwich",
+//     ingredients: ["bread", "peanut butter", "banana"]
+//     }
+
+// // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+
+// const howLunch = (object) => {
+//     return `The ingredients for a ${object.name}${object.type} are ${object.ingredients}.`
 // }
-// Write the code that accesses the ingredients property.
-// Write the code that access the third ingredient of the lunch object.
-// Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+// console.log(howLunch(lunch));
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+
+// const lunch = {
+//     name: "PB and Banana",
+//     type: "sandwich",
+//     ingredients: ["bread", "peanut butter", "banana"],
+//     log: function () {
+//         return `The ingredients for a ${this.name} ${this.type} are ${this.ingredients}.`
+//     }
+//   }
+
+//   output:he ingredients for a PB and Banana sandwich are bread,peanut butter,banana.
+  
+
+//   console.log(lunch.log());
+
 // Consider this variable:
 
-// const animals = [
-//   { name: "Waffles", type: "dog", age: 7 },
-//   { name: "Fluffy", type: "cat", age: 14 },
-//   { name: "Spelunky", type: "dog", age: 4 },
-//   { name: "Hank", type: "cat", age: 11 }
-// ]
+
+
 // Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
+// const animalType = (array) => {
+// return array.filter((animals) => animals.type === "cat") 
+// }
+// console.log(animalType(animals));
+
+// // output: [
+//   { name: 'Fluffy', type: 'cat', age: 14 },
+//   { name: 'Hank', type: 'cat', age: 11 }
+// ]
+
+
 // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
+// const animalNames = (array) => {
+// return array.map((animals) => animals.name)
+// }
+
+// console.log(animalNames(animals));
+
+// output:[ 'Waffles', 'Fluffy', 'Spelunky', 'Hank' ]
+
+const animals = [
+    { name: "Waffles", type: "dog", age: 7 },
+    { name: "Fluffy", type: "cat", age: 14 },
+    { name: "Spelunky", type: "dog", age: 4 },
+    { name: "Hank", type: "cat", age: 11 }
+  ]
+  
 // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
+
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
 // Consider this variable:
 
