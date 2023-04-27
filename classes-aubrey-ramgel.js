@@ -2,7 +2,7 @@
 // Write the code that makes a black coffee object
 // Write the code that outputs the black coffee's profile
 // Write the code that makes a coffee object with 1 cream and 2 sugars
-// Write the code that outputs the 1 cream and 2 sugars coffee profile
+// Write the code that outputs the 1 cream and 2 sugars coffee profile//
 
 class Coffee {
   constructor(type, cream, sugar) {
