@@ -73,6 +73,10 @@ console.log(pbbb(lunch));
 
 
 // * Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+lunch.update = function () {
+  return `The ingredients for a ${this.name} ${this.type} are ${this.ingredients[0]}, ${this.ingredients[1]}, and ${this.ingredients[2]}.`
+}
+console.log(lunch.update())
 // Consider this variable:
 // const animals = [
 //   { name: "Waffles", type: "dog", age: 7 },
