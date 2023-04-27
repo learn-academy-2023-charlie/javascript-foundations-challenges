@@ -31,17 +31,42 @@
 //   name: "chair",
 //   price: 24.99
 // }
-// Write a function called describeProduct that takes the product object as an argument and logs "The product is a chair. It costs $24.99".
-// Write a function called totalWithTax that takes the product object as an argument and returns the total price of the chair that includes a 7% sales tax rounded to two decimals.
+
+// // Write a function called describeProduct that takes the product object as an argument and logs "The product is a chair. It costs $24.99".
+// const describeProduct = (value) => {
+//     return `The product is a ${value.name}. It cost $${value.price}`  
+
+// }
+// console.log(describeProduct(product))
+//   //output: The product is a chair. It cost $24.99
+
+// // Write a function called totalWithTax that takes the product object as an argument and returns the total price of the chair that includes a 7% sales tax rounded to two decimals.
+
+// const totalWithTax = (value) => {
+//     return (value.price * .07 + value.price).toFixed(2)
+// }
+
+// console.log(totalWithTax(product))
+    //output: 26.74
+
+
 // Consider this variable:
 
-// const lunch = {
-//   name: "PB and Banana",
-//   type: "sandwich",
-//   ingredients: ["bread", "peanut butter", "banana"]
-// }
+const lunch = {
+  name: "PB and Banana",
+  type: "sandwich",
+  ingredients: ["bread", "peanut butter", "banana"]
+}
 // Write the code that accesses the ingredients property.
+ console.log(lunch.ingredients)
+    //output:[ 'bread', 'peanut butter', 'banana' ]
+
 // Write the code that access the third ingredient of the lunch object.
+
+console.log(lunch.ingredients[2])
+    //output: banana
+
+
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 // Consider this variable:
