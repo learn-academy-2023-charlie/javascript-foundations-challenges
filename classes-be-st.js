@@ -31,31 +31,66 @@
 //   }
 // }
 // Latte Maker: create a class for Latte
+// // Write a Latte class that takes a flavor, a milk type, and a number of shots
+// // Write a method for your Latte class that outputs the latte's profile
 
-class Latte {
-    constructor(flavor, milk, shots = 1) {
-        this.flavor = flavor
-        this.milk = milk
-        this.shots = shots
-    }
-    latteProfile () { 
-        return`A ${this.flavor} 
-        latte with ${this.milk} milk with ${this.shots} shots`
-    }
-}
+// class Latte {
+//     constructor(flavor, milk, shots = 1) {
+//         this.flavor = flavor
+//         this.milk = milk
+//         this.shots = shots
+//     }
+//     latteProfile () { 
+//         return`A ${this.flavor}latte with ${this.milk} milk with ${this.shots} shots`
+//     }
+// }
+// // Write the code that makes a regular, single shot latte
+// // Log the regular, single shot latte's profile
+// const regular = new Latte("regular", "no", 1)
+// console.log (regular.latteProfile()); 
 
-// Write a Latte class that takes a flavor, a milk type, and a number of shots
-// Write a method for your Latte class that outputs the latte's profile
-// Write the code that makes a regular, single shot latte
-// Log the regular, single shot latte's profile
-const regular = new Latte("regular", "no", 1)
-console.log (regular.latteProfile()); 
-// Write the code that makes a double shot, hazelnut latte with almond milk.
-const hazelnut = new Latte("hazelnut", "almond", 2)
-console.log(hazelnut.latteProfile());
-// Log the double shot, hazelnut latte with almond milk's profile.
+// // Write the code that makes a double shot, hazelnut latte with almond milk.
+// // Log the double shot, hazelnut latte with almond milk's profile.
+// const hazelnut = new Latte("hazelnut", "almond", 2)
+// console.log(hazelnut.latteProfile());
+
 
 // Volume of a Cylinder: create a class for Cylinder
 // Write a class that calculates the volume of a Cylinder: v = πr^2h (r is the radius and h is the height of the cylinder)
-// Write the code that rounds the volume of the cylinder to four decimal places
-// Write the code that creates three unique cylinder objects
+
+// class Volume {
+//     constructor(radius, height) {
+//         this.radius = radius
+//         this.height = height
+    // }
+//     equation () {
+//         return Math.PI * (this.radius ** 2) * this.height
+//     }
+// }
+// const cyl1 = new Volume(2,10)
+// console.log(cyl1.equation())
+
+// // Write the code that rounds the volume of the cylinder to four decimal places
+// class Volume {
+//     constructor(radius, height) {
+//         this.radius = radius
+//         this.height = height
+//     }
+//         equation () {
+//             return Number((Math.PI * (this.radius ** 2) * this.height).toFixed(4))
+// }
+// }
+
+// // let num = new Volume
+// // let roundedNum = Math.ceil(num * 10000) / 10000
+// // roundedNum = roundedNum.toFixed(4);
+// // console.log(roundedNum);
+// // Write the code that creates three unique cylinder objects
+// const cyl2 = new Volume (3, 5)
+// console.log(cyl2.equation())
+
+// const cyl3 = new Volume (4,8)
+// console.log(cyl3.equation())
+
+// const cyl4 = new Volume (5,3)
+// console.log(cyl4.equation())
