@@ -8,7 +8,7 @@ const arr1 = [3, 9, 15, 4, 10]
 // use .map()to iterate through the old array and create a new array
 // return statement with multiplier
 // console log new array
-
+// change 
 const mult10 = (array) => {
     return array.map((value) => value * 10)
   }
