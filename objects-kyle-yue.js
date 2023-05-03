@@ -141,7 +141,17 @@ const animals = [
   ]
   
 // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
+const agedAnimals = (array) => {
+    return array.filter((animals) => animals.age > 10) 
+    }
+    
 
+    
+
+console.log(agedAnimals(animals))
+
+
+// output: 
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
 // Consider this variable:
 
